@@ -1,0 +1,29 @@
+@startuml
+
+cloud Server {
+    file CSV1
+    file CSV2
+    folder Folder1
+    folder Folder2
+    folder Folder3
+    folder Folder4
+    folder Folder5
+    component Batch
+    database Database
+}
+
+cloud Alfresco
+
+CSV1 --> Batch
+CSV1 -- Folder1
+CSV1 -- Folder2
+
+CSV2 --> Batch
+CSV2 -- Folder3
+CSV2 -- Folder4
+CSV2 -- Folder5
+
+Batch  -- Database : status
+Batch  --> Alfresco : upload
+
+@enduml
