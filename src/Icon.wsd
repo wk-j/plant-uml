@@ -1,0 +1,24 @@
+@startuml
+
+skinparam handwritten true
+
+!define ICONURL https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/v2.1.0
+!includeurl ICONURL/common.puml
+!includeurl ICONURL/devicons/mysql.puml
+!includeurl ICONURL/font-awesome/database.puml
+!includeurl ICONURL/font-awesome-5/database.puml
+
+!includeurl ICONURL/govicons/jet.puml
+
+DEV_MYSQL(db1)
+DEV_MYSQL(db2,MySQL)
+DEV_MYSQL(db3,label of db3,database)
+DEV_MYSQL(db4,label of db4,database,red) #DeepSkyBlue
+
+GOV_JET(gov1, Jet, folder)
+GOV_JET(gov2, Jet, folder)
+
+db1 ..|> db2
+gov1 ..|> gov2
+
+@enduml
