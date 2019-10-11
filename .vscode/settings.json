@@ -1,0 +1,5 @@
+{
+    "plantuml.exportFormat": "png",
+    "plantuml.exportOutDir": "resource",
+    "plantuml.exportSubFolder": false
+}
