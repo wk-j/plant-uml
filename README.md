@@ -1,6 +1,6 @@
 ## Plant UML
 
-![](resource/src/Hello.png)
+![](resource/src/Azure.png)
 
 ```bash
 brew cask install java
